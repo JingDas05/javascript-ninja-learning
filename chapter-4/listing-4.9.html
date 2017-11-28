@@ -9,11 +9,13 @@
   <body>
     <script type="text/javascript">
 
+      // 判断value是否是素数的程序
       function isPrime(value) {
         if (!isPrime.answers) isPrime.answers = {};                  //#1
         if (isPrime.answers[value] != null) {                        //#2
           return isPrime.answers[value];                             //#2
         }                                                            //#2
+//        1 不能为素数
         var prime = value != 1; // 1 can never be prime
         for (var i = 2; i < value; i++) {
           if (value % i == 0) {
